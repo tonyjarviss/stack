@@ -3,7 +3,7 @@ const axios = require("axios");
 async function getDetails(id) {
     try {
         const response = await axios.get(
-            `https://api-2omy.onrender.com/get?url=${id}`
+            `https://api-2omy.onrender.com/terabox?url=${id}`
         );
         return response.data;
     } catch (error) {

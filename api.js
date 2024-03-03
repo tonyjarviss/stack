@@ -3,7 +3,7 @@ const axios = require("axios");
 async function getDetails(id) {
     try {
         const response = await axios.get(
-            `https://afca-174-138-88-233.ngrok-free.app/get?url=${id}`
+            `https://6229f56a-ea18-4a07-b514-e8d8d32b7b36-00-15pr5d1nprwqy.sisko.replit.dev/get?url=${id}`
         );
         return response.data;
     } catch (error) {

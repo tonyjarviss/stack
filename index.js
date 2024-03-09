@@ -41,7 +41,7 @@ async function main() {
             console.error(e); // Log the error for debugging
           }
         } else {
-          ctx.reply('Something went wrong 🙃');
+          ctx.reply('Something went wrong ');
         }
         console.log(details);
       } else {

@@ -9,10 +9,10 @@ async function main() {
   bot.start(async (ctx) => {
     try {
       ctx.reply(
-        `Hi ${ctx.message.from.first_name},\n\nSend terabox link.`,
+        `Hi ${ctx.message.from.first_name},\n\nSend terabox link.The bot send you file`,
         Markup.inlineKeyboard([
-          Markup.button.url(" Channel", "https://t.me/botcodes123"),
-          Markup.button.url("Report bug", "https://t.me/Armanidrisi_bot"),
+          Markup.button.url(" Channel", "https://t.me/+qdLjzK5bWoViOWQ1"),
+          Markup.button.url("Report bug", "https://t.me/seeuadmin_bot"),
         ]),
       );
     } catch (e) {
@@ -35,17 +35,17 @@ async function main() {
         const details = await getDetails(messageText);
         if (details && details.direct_link) {
           try {
-            ctx.reply(`Sending Files Please Wait.!!`);
+            ctx.reply(`processing your files......`);
             sendFile(details.direct_link, ctx);
           } catch (e) {
             console.error(e); // Log the error for debugging
           }
         } else {
-          ctx.reply('Something wrong ');
+          ctx.reply('Bot is Down,try after 10 mins');
         }
         console.log(details);
       } else {
-        ctx.reply("Please send a valid Terabox link.");
+        ctx.reply("send a valid Terabox link");
       }
     } else {
       //ctx.reply("No message text found.");
